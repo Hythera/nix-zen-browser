@@ -237,7 +237,7 @@ in
 
     rsync -r --exclude "*.patch" "${zen-src}/src/" .
 
-    find "${zen-src}/src" -type f -name "*.patch" ! -name "Info-plist-in.patch" ! -name "AsyncShutdown-sys-mjs.patch" | while read -r patch_name; do
+    find "${zen-src}/src" -type f -name "*.patch" | while read -r patch_name; do
       patch -p1 < $patch_name
     done
 
