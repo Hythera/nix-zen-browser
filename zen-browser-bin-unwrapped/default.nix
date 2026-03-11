@@ -26,7 +26,7 @@ let
   };
   pname = "zen-browser-bin-unwrapped";
   throwSystem = throw "Unsupported system: ${stdenv.hostPlatform.system}";
-  version = "1.19.1b";
+  version = "1.19.2b";
 in
 stdenv.mkDerivation {
   inherit pname version;
@@ -35,8 +35,8 @@ stdenv.mkDerivation {
     url = "https://github.com/zen-browser/desktop/releases/download/${version}/zen.${arch}.tar.xz";
     hash =
       {
-        x86_64-linux = "sha256-QKnRN+ajPkR36UKNYvJF2Oj0YQpyz7YkqXBwwuPd/as=";
-        aarch64-linux = "sha256-uLOxwWqbitKwW6hFRNQhfCD0iPbEsu+JSVHS3Ou/o98=";
+        x86_64-linux = "sha256-Tp/GXWjFFcWMAZDm9GIq20tqP+ypBQr3qxOblTrAkdQ=";
+        aarch64-linux = "sha256-wZmBDeYBS1gGlmRs1kKtVSTE9YTMsAAjkPMX6dSdE4E=";
       }
       .${stdenv.hostPlatform.system} or throwSystem;
   };
