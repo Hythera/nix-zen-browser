@@ -4,7 +4,7 @@
 <h1 align="center">Nix Zen Browser</h1>
 
 <p align="center">
-<a href="https://zen-browser.app/download/"><img src="https://img.shields.io/badge/version-1.19.1b-blue" alt="version"/></a>
+<a href="https://zen-browser.app/download/"><img src="https://img.shields.io/badge/version-1.19.2b-blue" alt="version"/></a>
 <a href="https://github.com/Hythera/nix-zen-browser/stargazers"><img src="https://img.shields.io/github/stars/Hythera/nix-zen-browser" alt="stars"/>
 </p>
 

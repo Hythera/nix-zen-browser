@@ -207,17 +207,17 @@ let
   };
   firefox-src = fetchurl {
     url = "mirror://mozilla/firefox/releases/${firefox-version}/source/firefox-${firefox-version}.source.tar.xz";
-    hash = "sha512-sOhiCR86B6AokPZBTne0M4kzZKi+r1ItRA6X7QBgybFL2y//3s3xLcqEnvzoxX2VpTSyPgQlnYOpbujyngeDSQ==";
+    hash = "sha512-Vqk65SNfOHBPL1a2JG2t2t07zvHbeXzKECAvuRm6Lw4UWd76qkHPGI8mkQjvrvG3bMv64z1Q7L1SdlF2tDIL7w==";
   };
-  firefox-version = "148.0";
+  firefox-version = "148.0.2";
   surfer-config = builtins.fromJSON (builtins.readFile ./surfer.json);
   zen-src = fetchFromGitHub {
     owner = "zen-browser";
     repo = "desktop";
     tag = zen-version;
-    hash = "sha256-a0Uxwjd8//IKZQhIxnF/pYBtq/FX9CBs5wU4k9tAS2g=";
+    hash = "sha256-oI9cSMnrKDyQx6Fz18lAvkHKvX8ut4XbUda8IMjb044=";
   };
-  zen-version = "1.19.1b";
+  zen-version = "1.19.2b";
 in
 {
   inherit
