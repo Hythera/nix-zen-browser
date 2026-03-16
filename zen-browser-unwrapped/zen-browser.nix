@@ -215,9 +215,9 @@ let
     owner = "zen-browser";
     repo = "desktop";
     tag = zen-version;
-    hash = "sha256-oI9cSMnrKDyQx6Fz18lAvkHKvX8ut4XbUda8IMjb044=";
+    hash = "sha256-hAefwCs5/larokHA04yKACY7+CkYSMhCECBL2KYvTDg=";
   };
-  zen-version = "1.19.2b";
+  zen-version = "1.19.3b";
 in
 {
   inherit
