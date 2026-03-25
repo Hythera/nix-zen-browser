@@ -210,7 +210,25 @@ let
     hash = "sha512-Vqk65SNfOHBPL1a2JG2t2t07zvHbeXzKECAvuRm6Lw4UWd76qkHPGI8mkQjvrvG3bMv64z1Q7L1SdlF2tDIL7w==";
   };
   firefox-version = "148.0.2";
-  surfer-config = builtins.fromJSON (builtins.readFile ./surfer.json);
+  surfer-config = {
+    name = "Zen Browser";
+    vendor = "Zen OSS Team";
+    appId = "zen";
+    brands = {
+      release = {
+        backgroundColor = "#282A33";
+        brandShorterName = "Zen";
+        brandShortName = "Zen";
+        brandFullName = "Zen Browser";
+      };
+      twilight = {
+        backgroundColor = "#282A33";
+        brandShorterName = "Zen";
+        brandShortName = "Twilight";
+        brandFullName = "Zen Twilight";
+      };
+    };
+  };
   zen-src = fetchFromGitHub {
     owner = "zen-browser";
     repo = "desktop";

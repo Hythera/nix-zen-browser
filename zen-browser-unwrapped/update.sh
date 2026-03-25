@@ -55,9 +55,6 @@ awk -v currentFirefoxVersion="$currentFirefoxVersion" -v firefoxVersion="$firefo
   { print }
 ' "$SRC_NIX" > "$SRC_NIX.tmp" && mv "$SRC_NIX.tmp" "$SRC_NIX"
 
-# Update surfer.json
-cat $srcDir/surfer.json > $SCRIPT_DIR/surfer.json
-
 # Update ffprefs
 setKey cargoHash "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
 
