@@ -22,10 +22,10 @@ let
 
   firefox-src = fetchurl {
     url = "mirror://mozilla/firefox/releases/${firefox-version}/source/firefox-${firefox-version}.source.tar.xz";
-    hash = "sha512-zdhxp3OPtw2FpwPonEh00b9EGEtMmyiQGQKty/olwZlnXnRjBrtZ1mgh5uzRfgfJm2akjYJ/OazKbDsBK5U3Gg==";
+    hash = "sha512-hEpG7gaOzcZrcifQiaBXrT9JRRFP6iyygNXio4PQoCL8ZiitV8Bo6jTPFZRy9jxQ6n7RKLwRoLJ/Frt7Z9fzzw==";
   };
 
-  firefox-version = "149.0";
+  firefox-version = "149.0.2";
 
   surfer-config = {
     name = "Zen Browser";
@@ -51,10 +51,10 @@ let
     owner = "zen-browser";
     repo = "desktop";
     tag = zen-version;
-    hash = "sha256-UQATOPDahwaxoWQcawnT/d5go6YJPjIVud9Bow8BfRg=";
+    hash = "sha256-H6gtyHVqXg3NGl4pUnpWXoGDpQV9SghPOrekTYczmGQ=";
   };
 
-  zen-version = "1.19.5b";
+  zen-version = "1.19.8b";
 in
 {
   inherit
